@@ -445,3 +445,136 @@ aluno13 = mediaescolar(nota13,nota23)
 > Consiste na impressão dos dados do mundo abstrato, digital por meio de ação de alguma interface.
 
 > Os formatos podem variar desde simples arquivos binários até complexas query's de banco de dados.
+
+# 🍀 Aula 4: Linguagens de programação
+
+## Introdução à linguagem de programação
+
+### O que é uma linguagem de programação?
+
+> Método padronizado composto por um conjunto de regras sintáticas e semânticas de implementação de um código fonte
+
+### Como o computador entende o programa?
+
+Linguagem de alto nível -> Compilador -> Linguagem de máquina
+
+**Tradução:**
+
+- (1) Geração do programa objeto
+- (2) Execução do programa objeto
+
+**Interpretação:**
+
+- Programa fonte executado diretamente
+
+## Características de um programa
+
+### Diretrizes do Desenvolvimento de Programas
+
+1. Legibilidade
+
+   - Facilidade de leitura
+   - Compreensão
+   - Ortogonalidade
+   - Definição adequada das estruturas
+
+2. Redigibilidade
+
+   - Pode conflitar com a legibilidade
+   - Ortogonalidade
+   - Simplicidade da escrita
+   - Suporte à abstração
+   - Reuso do código
+   - Expressividade
+
+3. Confiabilidade
+
+   - Verificação de tipos
+   - Trata exceções
+   - Uso de ponteiros
+   - Compatibilidade entre compiladores
+
+4. Custo
+
+   - Treinamento
+   - Codificação
+   - Compilação
+   - Execução
+   - Infra-estrutura
+
+## Análises de código
+
+### Análise
+
+#### Análise léxica
+
+> Particionar -> Classificar -> Eliminar
+
+#### Análise sintática
+
+> Corretude do programa
+
+#### Análise semântica
+
+> Lógica do programa
+
+## Paradigmas de programação
+
+> Forma de resolução de problemas com diretrizes e limitações específicas de cada paradigma utilizando linguagem de programação.
+
+### Classificação
+
+1. Orientação à Objeto
+2. Procedural
+3. Funcional
+4. Estruturado
+5. Computação distribuída
+6. Lógico
+
+### Paradigma Estruturado
+
+Conceitos:
+
+- Sequência
+- Decisão
+- Iteração
+
+Utilização:
+
+- Problemas simples e diretos
+- Aprender programação
+
+### Paradigma de Orientação à Objeto
+
+#### O que é um objeto?
+
+> Um objeto é descrito por características específicas, comportamentos e estado
+
+#### Classe Caneta:
+
+```Portugol
+classe caneta():
+
+    cor: inteiro
+    carga: caracter
+    tampada: lógico
+
+    metodo escrever()
+    Se estado tampada
+        Escreva ("Destampar")
+    Senão
+        Escreva ("algo")
+    Fimse
+
+    metodo tampar()
+    Tampada = verdadeiro
+
+fimclasse
+```
+
+#### Pilares de Orientação a Objeto
+
+1. Herança
+2. Encapsulamento
+3. Polimorfismo
+4. Abstração
