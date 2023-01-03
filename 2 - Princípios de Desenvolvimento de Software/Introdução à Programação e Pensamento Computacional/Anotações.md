@@ -164,16 +164,41 @@ O problema consiste em determinar o número escolhido por uma pessoa dentro de u
 
 ### 🔎 Busca binária:
 
-#### Passo 1 – Ordenar o vetor
+Passo 1 – Ordenar o vetor
 
-#### Passo 2 – Módulo de L/2
+Passo 2 – Módulo de L/2
 
-#### Passo 3 – Acessar estrutura
+Passo 3 – Acessar estrutura
 
-#### Passo 4 – Comparar valores
+Passo 4 – Comparar valores
 
-#### Passo 5 – Repita até encontrar o número
+Passo 5 – Repita até encontrar o número
 
-#### Passo 6 – Imprima "Busca bem sucedida"
+Passo 6 – Imprima "Busca bem sucedida"
 
-<!--# 🧠 Aula 2: Introdução à Lógica de programação-->
+# 🎳 Aula 2: Introdução à Lógica de programação
+
+Definição:
+
+> Parte da filosofia que trata das formas do pensamento em geral (dedução, indução, hipótese, inferência etc.) e das operações intelectuais que visam à determinação do que é verdadeiro ou não.
+
+> Organização e planejamento das instruções, assertivas em um algoritmo, a fim de viabilizar a implantação de um programa.
+
+## 🧩 Técnicas de Lógica de Programação
+
+### Técnica Linear
+
+- Modelo tradicional
+- Não tem vínculo
+- Estrutura hierárquica
+- Programação de computadores
+
+### Técnica Estruturada
+
+- Maior nível de complexidade
+- Não linearidade
+
+### Técnica Modular
+
+- Controlada por um conjunto de regras
+- Modulação
