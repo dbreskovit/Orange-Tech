@@ -202,3 +202,246 @@ Definição:
 
 - Controlada por um conjunto de regras
 - Modulação
+
+# 🎪 Aula 3: Fundamentos de algoritmos
+
+## Tipologias
+
+- Caracteres (Caractere)
+- Lógicos (Verdadeiro ou Falso)
+- Numéricos (Inteiro, Real, Etc.)
+
+## Variável
+
+> pode assumir qualquer um dos valores de um determinado conjunto de valores.
+
+### Regras de variável
+
+- Atribuição de um ou mais caracteres
+- Primeira letra - não número
+- Sem espaços em branco
+- Vedado (Utilização de palavras reservadas)
+- Caracteres e números
+
+## Instruções primitivas
+
+> Instruções são linguagem de palavras-chave (vocabulário) de uma determinada de programação que tem por finalidade comandar um computador que irá tratar os dados
+
+### Operadores
+
+| Operador | Operação            | Tipo     | Prioridade Matemática |
+| -------- | ------------------- | -------- | --------------------- |
+| `+`      | Manutenção de sinal | Unitário | 1                     |
+| `-`      | Inversão de sinal   | Unitário | 1                     |
+| `^`      | Exponenciação       | Binário  | 2                     |
+| `/`      | Divisão             | Binário  | 3                     |
+| `*`      | Multiplicação       | Binário  | 3                     |
+| `+`      | Adição              | Binário  | 4                     |
+| `-`      | Subtração           | Binário  | 4                     |
+
+### Exemplo: Média escolar
+
+```Portugol
+Início programa:
+
+    Nota1 = 5
+    Nota = 8
+    Resultado = 0
+
+    Resultado = (Nota1 + Nota2)/2
+
+    Escreva resultado
+
+Fim programa
+
+Saída:
+    6.5
+```
+
+## Estruturas condicionais e operadores
+
+> Condição: Estado de uma pessoa ou coisa
+
+> Condicional: contem ou implica uma suposição ou hipótese
+
+### Operadores relacionais
+
+| Operador       | Símbolo |
+| -------------- | :-----: |
+| Igual          |   ==    |
+| Diferente      |   !=    |
+| Maior          |    >    |
+| Maior ou igual |   >=    |
+| Menor          |    <    |
+| Menor ou igual |   <=    |
+
+### Condicional Simples
+
+```Portugol
+Início programa:
+
+    A = 0
+    B = 0
+    X = 0
+
+    leia A
+    leia B
+
+    X = A + B
+
+    se (X > 10)
+        escreva X
+    Fim se
+
+Fim programa
+```
+
+### Condicional Composta
+
+```Portugol
+Início programa:
+    A = 0
+    B = 0
+    X = 0
+
+    leia A
+    leia B
+
+    X = A + B
+
+    se (X >= 10)
+        X = X-7
+    Senão
+        X = X+5
+
+    Fim se
+Fim programa
+```
+
+### Operadores Lógicos
+
+**AND – operador Lógico**
+
+| Condição 1 | Condição 2 | Resultado  |
+| :--------: | :--------: | :--------: |
+|   Falsa    |   Falsa    |   Falso    |
+| Verdadeira |   Falsa    |   Falso    |
+|   Falsa    | Verdadeira |   Falso    |
+| Verdadeira | Verdadeira | Verdadeiro |
+
+**OR – operador Lógico**
+
+| Condição 1 | Condição 2 | Resultado  |
+| :--------: | :--------: | :--------: |
+|   Falsa    |   Falsa    |   Falso    |
+| Verdadeira |   Falsa    | Verdadeiro |
+|   Falsa    | Verdadeira | Verdadeiro |
+| Verdadeira | Verdadeira | Verdadeiro |
+
+**NOT – operador Lógico**
+
+| Condição 1 | Resultado  |
+| :--------: | :--------: |
+| Verdadeira |   Falso    |
+|   Falsa    | Verdadeiro |
+
+## Estruturas de repetição
+
+### Enquanto
+
+Teste lógico
+
+- Início
+
+Número de repetições
+
+- indefinidas
+
+```Portugol
+grama = Falso
+
+Enquanto (grama == falso) faça
+
+<instrução de cortar grama>
+<atualiza grama>
+
+fim enquanto
+```
+
+### Repita
+
+Teste lógico
+
+- final
+
+Número de repetições
+
+- indefinidas
+
+### Para
+
+Teste lógico
+
+- Início
+
+Número de repetições
+
+- Definidas
+
+```Portugol
+somatório = 0
+
+para inicio = 1 até 10
+
+    somatório = somatório + inicio
+    Escreva somatório
+
+fim para
+```
+
+## Vetores e matrizes
+
+### Vetores:
+
+> Um vetores é caracterizado por uma variável dimensionada com tamanho pré-fixado.
+
+### Matriz:
+
+> Matriz é uma tabela organizada em linhas e colunas no formato m x n, onde m representa o número de linhas (horizontal) e n o número de colunas (vertical)
+
+## O que são funções?
+
+> As funções, ou sub-rotinas são blocos de instruções que realizam tarefas específicas
+
+### Funções:
+
+Blocos de instruções (código), identificados por nomes e parâmetros
+
+```Portugol
+funcao mediaescolar(nota1,nota2)
+
+    resultado = 0
+    resultado = (Nota1 + Nota2)/2
+
+    retorne  resultado
+
+fim funcao
+
+------------------------------------------
+
+aluno1 = mediaescolar(nota11,nota21)
+aluno2 = mediaescolar(nota12,nota22)
+aluno13 = mediaescolar(nota13,nota23)
+```
+
+## Instruções de entrada/saída
+
+### Instruções de entrada
+
+> Consiste na inserção e recebimento de dados do mundo real por meio de ação de alguma interface, seja teclado, mouse, arquivos, entre outros.
+
+### Instruções de saída
+
+> Consiste na impressão dos dados do mundo abstrato, digital por meio de ação de alguma interface.
+
+> Os formatos podem variar desde simples arquivos binários até complexas query's de banco de dados.
