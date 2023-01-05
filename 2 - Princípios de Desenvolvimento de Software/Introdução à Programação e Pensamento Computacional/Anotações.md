@@ -205,13 +205,13 @@ Definição:
 
 # 🎪 Aula 3: Fundamentos de algoritmos
 
-## Tipologias
+## 📁 Tipologias
 
 - Caracteres (Caractere)
 - Lógicos (Verdadeiro ou Falso)
 - Numéricos (Inteiro, Real, Etc.)
 
-## Variável
+## 📬 Variável
 
 > pode assumir qualquer um dos valores de um determinado conjunto de valores.
 
@@ -223,7 +223,7 @@ Definição:
 - Vedado (Utilização de palavras reservadas)
 - Caracteres e números
 
-## Instruções primitivas
+## 🔰 Instruções primitivas
 
 > Instruções são linguagem de palavras-chave (vocabulário) de uma determinada de programação que tem por finalidade comandar um computador que irá tratar os dados
 
@@ -258,7 +258,7 @@ Saída:
     6.5
 ```
 
-## Estruturas condicionais e operadores
+## 🔀 Estruturas condicionais e operadores
 
 > Condição: Estado de uma pessoa ou coisa
 
@@ -345,7 +345,7 @@ Fim programa
 | Verdadeira |   Falso    |
 |   Falsa    | Verdadeiro |
 
-## Estruturas de repetição
+## 🔁 Estruturas de repetição
 
 ### Enquanto
 
@@ -399,7 +399,7 @@ para inicio = 1 até 10
 fim para
 ```
 
-## Vetores e matrizes
+## 🎭 Vetores e matrizes
 
 ### Vetores:
 
@@ -409,7 +409,7 @@ fim para
 
 > Matriz é uma tabela organizada em linhas e colunas no formato m x n, onde m representa o número de linhas (horizontal) e n o número de colunas (vertical)
 
-## O que são funções?
+## 🤔 O que são funções?
 
 > As funções, ou sub-rotinas são blocos de instruções que realizam tarefas específicas
 
@@ -434,7 +434,7 @@ aluno2 = mediaescolar(nota12,nota22)
 aluno13 = mediaescolar(nota13,nota23)
 ```
 
-## Instruções de entrada/saída
+## 💾 Instruções de entrada/saída
 
 ### Instruções de entrada
 
@@ -448,7 +448,7 @@ aluno13 = mediaescolar(nota13,nota23)
 
 # 🍀 Aula 4: Linguagens de programação
 
-## Introdução à linguagem de programação
+## 🐍 Introdução à linguagem de programação
 
 ### O que é uma linguagem de programação?
 
@@ -467,7 +467,7 @@ Linguagem de alto nível -> Compilador -> Linguagem de máquina
 
 - Programa fonte executado diretamente
 
-## Características de um programa
+## 💬 Características de um programa
 
 ### Diretrizes do Desenvolvimento de Programas
 
@@ -502,7 +502,7 @@ Linguagem de alto nível -> Compilador -> Linguagem de máquina
    - Execução
    - Infra-estrutura
 
-## Análises de código
+## 🔎 Análises de código
 
 ### Análise
 
@@ -512,13 +512,13 @@ Linguagem de alto nível -> Compilador -> Linguagem de máquina
 
 #### Análise sintática
 
-> Corretude do programa
+> Exatidão do programa
 
 #### Análise semântica
 
 > Lógica do programa
 
-## Paradigmas de programação
+## 🧩 Paradigmas de programação
 
 > Forma de resolução de problemas com diretrizes e limitações específicas de cada paradigma utilizando linguagem de programação.
 

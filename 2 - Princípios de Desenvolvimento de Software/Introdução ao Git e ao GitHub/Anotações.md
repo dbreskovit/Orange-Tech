@@ -44,7 +44,7 @@ $ rm -rf workspace
 
 # Entendendo como o Git funciona
 
-## Objetos fundamentais
+## 🎲 Objetos fundamentais
 
 ### SHA-1
 
@@ -64,7 +64,7 @@ O commit é o objeto que dá o sentindo para alteração que está sendo realiza
 
 # Primeiros comandos com Git
 
-## Repositório Local
+## 📦 Repositório Local
 
 ### Criar novo repositório
 
@@ -167,7 +167,7 @@ O commit é o objeto que dá o sentindo para alteração que está sendo realiza
 
 # Introdução ao Github
 
-## Repositório Remoto
+## 📦 Repositório Remoto
 
 ### Exibir os repositórios remotos
 

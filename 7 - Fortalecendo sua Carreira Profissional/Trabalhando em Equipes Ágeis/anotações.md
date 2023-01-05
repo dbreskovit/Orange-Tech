@@ -137,7 +137,7 @@
 
 # Métodos e Ferramentas Ágeis
 
-## Framework Scrum
+## 🔁 Framework Scrum
 
 > _"Scrum é um framework leve que ajuda pessoas, times e organizações a gerar valor por meio de soluções adaptativas para problemas complexos."_ Scrum Guide (Nov. 2020)
 
@@ -160,7 +160,7 @@ A adaptação acontece quando o Time Scrum aprende através da transparência e 
 - O framework Scrum é propositalmente incompleto, apenas definindo as partes necessárias para implementar a teoria Scrum.
 - Em vez de fornecer às pessoas instruções detalhadas, as regras do Guia do Scrum orientam seus relacionamentos e interações.
 
-## Extreme Programming (XP)
+## 🐴 Extreme Programming (XP)
 
 É uma metodologia que tem como objetivo criar sistemas com alta qualidade, com base em uma interação próxima com os clientes, testagem constante e ciclos de desenvolvimento curtos.
 
@@ -176,7 +176,7 @@ A adaptação acontece quando o Time Scrum aprende através da transparência e 
 6. Aproximação com o cliente
 7. Flexibilidade
 
-## Kanban
+## 📝 Kanban
 
 É um método para **definir, gerenciar e melhorar serviços**, que entregam trabalho de conhecimento, como serviços profissionais, atividades criativas e o design de produtos físicos e de software.
 
@@ -193,7 +193,7 @@ Na atualidade, o quadro Kanban ultrapassou os limites da indústria e passou a s
 - Prestação de serviços
 - Desenvolvimento de softwares
 
-## **O**bjectives **K**ey **R**esults (OKR)
+## 🔑 **O**bjectives **K**ey **R**esults (OKR)
 
 ### Objectives
 
