@@ -114,7 +114,8 @@ console.log(`Valor gasto de combustível: R\$${valorGasto.toFixed(2)}`);
 ```Javascript
 
 /*
-    1) Faça um algoritmo que dado as três notas tiradas por um aluno em um semestre da faculdade calcule a sua média e mostre as seguintes mensagens de acordo com cada situação:
+    1) Faça um algoritmo que dado as três notas tiradas por um aluno em um semestre da faculdade calcule a sua média e mostre 
+    as seguintes mensagens de acordo com cada situação:
 
     Médio = (nota1 + nota2 + nota3) / 3
 
@@ -205,7 +206,8 @@ if (imc >= 40) {
 ```Javascript
 
 /*
-    Elabore um algoritmo  que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta e a escolha da condição de pagamento.
+    Elabore um algoritmo  que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta 
+    e a escolha da condição de pagamento.
     Utilize os códigos da tabela a seguir para ler qual condição de pagamento escolhida e efetuar o cálculo adequado.
 
     Código condição de pagamento:
@@ -337,7 +339,8 @@ if (verificaIdade(18)) {
 ```Javascript
 
 /*
-    Elabore um algoritmo  que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta e a escolha da condição de pagamento.
+    Elabore um algoritmo  que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta 
+    e a escolha da condição de pagamento.
     Utilize os códigos da tabela a seguir para ler qual condição de pagamento escolhida e efetuar o cálculo adequado.
 
     Código condição de pagamento:
