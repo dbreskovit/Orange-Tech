@@ -114,7 +114,7 @@ console.log(`Valor gasto de combustível: R\$${valorGasto.toFixed(2)}`);
 ```Javascript
 
 /*
-    1) Faça um algoritmo que dado as três notas tiradas por um aluno em um semestre da faculdade calcule a sua média e mostre 
+    1) Faça um algoritmo que dado as três notas tiradas por um aluno em um semestre da faculdade calcule a sua média e mostre
     as seguintes mensagens de acordo com cada situação:
 
     Médio = (nota1 + nota2 + nota3) / 3
@@ -206,7 +206,7 @@ if (imc >= 40) {
 ```Javascript
 
 /*
-    Elabore um algoritmo  que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta 
+    Elabore um algoritmo  que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta
     e a escolha da condição de pagamento.
     Utilize os códigos da tabela a seguir para ler qual condição de pagamento escolhida e efetuar o cálculo adequado.
 
@@ -339,7 +339,7 @@ if (verificaIdade(18)) {
 ```Javascript
 
 /*
-    Elabore um algoritmo  que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta 
+    Elabore um algoritmo  que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta
     e a escolha da condição de pagamento.
     Utilize os códigos da tabela a seguir para ler qual condição de pagamento escolhida e efetuar o cálculo adequado.
 
@@ -381,6 +381,248 @@ if (formaDePagamento === 3) {
 
 if (formaDePagamento === 4) {
   console.log(`O valor final do produto é R$ ${aplicarJuros(Etiqueta, 0.1)}`);
+}
+
+```
+
+# Criando Objetos e Classes em JavaScript
+
+## Entendendo Objetos e Classes
+
+### Aula:
+
+```Javascript
+
+// Objetos são estruturas que armazenam dados e comportamentos relacionados a um mesmo contexto.
+// Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor.
+// Um valor de propriedade pode ser uma função, que é então considerada um método do objeto.
+
+/*
+
+    // Objeto literal -> forma mais simples de criar um objeto
+
+    const Diego = {
+    // Atributos
+    nome: "Diego",
+    idade: 17,
+    altura: 1.7,
+    faculdade: null,
+
+    // Métodos
+
+    descrever: function () {
+        console.log(
+        `${this.nome} tem ${this.idade} anos e ${this.altura}m de altura.`
+        );
+    },
+    };
+*/
+
+// Classes são estruturas que permitem criar objetos com atributos e métodos pré-definidos.
+// A sintaxe de uma classe é muito parecida com a de uma função, mas ao invés de utilizar a palavra function, utilizamos a palavra class.
+// Uma instancia de uma classe é chamada de objeto.
+
+class Pessoa {
+  //Atributos
+  nome;
+  idade;
+  altura;
+  faculdade;
+
+  //Métodos
+  descrever() {
+    console.log(
+      `${this.nome} tem ${this.idade} anos e ${this.altura}m de altura.`
+    );
+  }
+
+  //Construtor
+  constructor(nome, idade, altura, faculdade) {
+    this.nome = nome;
+    this.idade = idade;
+    this.altura = altura;
+    this.faculdade = faculdade;
+  }
+}
+
+const Diego = new Pessoa("Diego", 17, 1.7, null);
+
+function compararPessoas(p1, p2) {
+  if (p1.idade > p2.idade) {
+    console.log(`${p1.nome} é mais velho que ${p2.nome}.`);
+  } else if (p1.idade < p2.idade) {
+    console.log(`${p1.nome} é mais novo que ${p2.nome}.`);
+  } else {
+    console.log(`${p1.nome} e ${p2.nome} têm a mesma idade.`);
+  }
+}
+
+```
+
+## Praticando com Objetos e Classes
+
+### Exercício 01:
+
+```Javascript
+
+/*
+    Crie uma classe para representar carros.
+    Os carros possuem uma marca, uma cor e um gasto médio de combustível por km rodados.
+    Crie um método que dado à quantidade  de km e o preço do combustível nos dê o valor
+    gasto em reais para realizar este percurso.
+*/
+
+class Carro {
+  marca;
+  cor;
+  gastoMedioCombustivelPorKm;
+
+  constructor(marca, cor, gastoMedioCombustivelPorKm) {
+    this.marca = marca;
+    this.cor = cor;
+    this.gastoMedioCombustivelPorKm = gastoMedioCombustivelPorKm;
+  }
+
+  calcularGastoCombustivel(km, precoCombustivel) {
+    return km * this.gastoMedioCombustivelPorKm * precoCombustivel;
+  }
+}
+
+const c1 = new Carro("Fiat", "Vermelho", 0.15);
+console.log(c1.calcularGastoCombustivel(100, 4.5));
+
+```
+
+### Exercício 02:
+
+```Javascript
+
+/*
+
+    Crie uma classe para representar pessoas. Para cada pessoa teremos os atributos:
+    nome, peso, altura. Aas pessoas devem ter a capacidade de dizer o valor do seu IMC
+    instancie uma pessoa chamada José, que tenha 70kg de peso, 1.75 de altura
+    e peça ao José para dizer o valor do seu IMC.
+    IMC em adultos:
+        - abaixo de 18.5 (abaixo do peso);
+        - entre 18.5 e 25 (peso normal);
+        - entre 25 e 30 (acima do peso);
+        - entre 30 e 40 (obeso);
+        - acima de 40 (obesidade grave);
+*/
+
+class Pessoa {
+  nome;
+  peso;
+  altura;
+
+  constructor(nome, peso, altura) {
+    this.nome = nome;
+    this.peso = peso;
+    this.altura = altura;
+  }
+
+  calcularIMC() {
+    return this.peso / this.altura ** 2;
+  }
+
+  dizerIMC() {
+    const imc = this.calcularIMC();
+
+    if (imc < 18.5) {
+      console.log("Abaixo do peso");
+    }
+
+    if (imc >= 18.5 && imc < 25) {
+      console.log("Peso normal");
+    }
+
+    if (imc >= 25 && imc < 30) {
+      console.log("Acima do peso");
+    }
+
+    if (imc >= 30 && imc < 40) {
+      console.log("Obeso");
+    }
+
+    if (imc >= 40) {
+      console.log("Obesidade grave");
+    }
+  }
+}
+
+const Jose = new Pessoa("José", 70, 1.75);
+Jose.dizerIMC();
+
+```
+
+# Arrays e Estruturas de Repetição
+
+## Arrays e Estruturas de Repetição
+
+### Aula:
+
+```Javascript
+
+// Arrays são estruturas de dados que permitem armazenar mais de um valor em uma única variável
+const notas = [];
+
+notas.push(7.7); // Adiciona um elemento no array
+notas.push(8.9); // Adiciona um elemento no array
+notas.push(9.5); // Adiciona um elemento no array
+
+console.log(notas); // Imprime o array inteiro
+console.log(notas[0]); // Imprime o primeiro elemento do array
+console.log(notas[1]); // Imprime o segundo elemento do array
+console.log(notas[2]); // Imprime o terceiro elemento do array
+
+// Estruturas de repetição são estruturas que permitem executar um bloco de código várias vezes
+
+const soma = 0;
+
+for (let i = 0; i < notas.length; i++) {
+  console.log(`Nota ${i} = ${notas[i]}`);
+  soma += notas[i];
+}
+
+const média = soma / notas.length;
+console.log(`Média = ${média}`);
+
+```
+
+## Praticando Estruturas de Repetição
+
+### Exercício 01:
+
+```Javascript
+
+/*
+    Crie um programa que, dado um número, imprima sua tabuada.
+*/
+
+numero = 5;
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`${i} x ${numero} = ${i * numero}`);
+}
+
+
+```
+
+### Exercício 02:
+
+```Javascript
+
+/*
+    Crie um programa que seja capaz de percorrer uma lista de números e imprima cada número par encontrado.
+*/
+
+const números = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < números.length; i++) {
+  if (números[i] % 2 === 0) {
+    console.log(números[i]);
+  }
 }
 
 ```
