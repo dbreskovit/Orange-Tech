@@ -80,3 +80,13 @@ Operação que inverte o valor lógico de um operando ou expressão
 - Estruturas de repetição: for, while, do-while.
 - Estruturas de exceções: try-catch-finally, throw.
 - Estruturas de interrupção: break, continue e return.
+
+# Blocos
+
+> "É um grupo de zero ou mais códigos quais trabalham em conjunto para executar uma operação."
+
+## Tipos:
+
+- Locais: dentro de métodos
+- Estáticos: dentro de classes
+- Instância: dentro de classes
